@@ -1,0 +1,9 @@
+---
+
+- name: Configure new VM
+  hosts: "{{ target }}"
+  tasks:
+    - name: Basline the new VM
+      ansible.builtint.include_role:
+        name: "{{ item }}"
+      loop: "{{ hostvars[inventory_hostname].ansible_roles }}"

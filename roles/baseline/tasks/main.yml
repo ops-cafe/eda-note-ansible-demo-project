@@ -1,0 +1,5 @@
+---
+
+- name: Simulate configuring OS
+  debug:
+    msg: "The new VM will be configured based on the Netbox configuration"
